@@ -7,9 +7,9 @@ function determineTriangleType($a, $b, $c) {
     }
 
     // Определение типа треугольника
-    if ($a == $b && $b == $c) {
+    if ($a === $b && $b === $c) {
         return "Равносторонний треугольник";
-    } elseif ($a == $b || $b == $c || $a == $c) {
+    } elseif ($a === $b || $b === $c || $a === $c) {
         return "Равнобедренный треугольник";
     } else {
         return "Разносторонний треугольник";
@@ -32,4 +32,3 @@ if ($a <= 0 || $b <= 0 || $c <= 0) {
 }
 
 echo determineTriangleType($a, $b, $c) . "\n";
-?>
