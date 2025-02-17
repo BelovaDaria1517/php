@@ -30,4 +30,3 @@ echo "Введите номер месяца (1-12): ";
 $month = (int)trim(fgets(STDIN));
 
 echo "Количество дней в месяце: " . getDaysInMonth($month) . "\n";
-?>
